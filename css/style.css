@@ -127,3 +127,20 @@ html,body{
 
 
 /*------------------------------------------------------------------*/
+
+@media screen and (max-width:350px){
+    .btn{
+        width: 101%;
+        height: 20%;
+    }
+    
+    .btn-2{
+        width: 101%;
+        height: 20%;
+        background-color: #ccc9c6;
+        box-sizing: border-box;
+    }
+
+
+
+}
