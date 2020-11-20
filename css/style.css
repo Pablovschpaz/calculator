@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,body{
+    height: 100%;
+    background-color: #cacaca;
+    box-sizing: border-box;
+}
+
+.main{
+    cursor:pointer;
+    border: 5px solid black;
+    border-bottom: 0;
+    border-radius: 20px;
+    width: 330px;
+    min-height: 580px;
+    margin: 1% auto;
+    background-color: #A09595;
+}
+
+/*display----------------------------------*/
+#buffer{
+    border-radius: 20px;
+    width: 100%;
+    height: 220px;
+    background-color: #A09595;
+    text-align: right; 
+    align-items: center;
+    font-family: monospace;
+}
+
+#display{
+    width: 100%;
+    background-color: #A09595;
+    font-size: 60px;
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 10px;
+    border:none;
+    user-select: all;
+}
+
+#hist{
+    border-radius: 20px;
+    background-color: #A09595;
+    padding-top: 80px;
+    padding-right: 30px;
+    border:none;
+    text-align: right;
+    height: 30px;
+    font-size: 15px;
+}
+/*------------------------------------------*/
+/*botoes-----------------------------------*/
+.c{
+    font-size: 25px;
+}
+
+.c:nth-child(2){
+   
+}
+
+.btns{
+    cursor:pointer;
+    border-radius: 0 20px 20px 20px;
+    width: 100%;
+    height: 360px;
+    background-color: #dad5d3;
+}
+
+.btn{
+    width: 100%;
+    height: 20%;
+}
+
+.btn-2{
+    width: 100%;
+    height: 20%;
+    background-color: #ccc9c6;
+    box-sizing: border-box;
+}
+
+.bt{
+    cursor:pointer;
+    border: 0;
+    width: 25%;
+    height: 100%;
+}
+.btn > .bt{
+    background-color: #dad5d3;
+}
+.btn-2 > .bt{
+    background-color: #ccc9c6;
+}
+
+.btn-2 > .bt2{
+    background-color: #A09595;
+    width: 21.1%;
+    margin-left: -1px;
+}
+.btn > .bt2{
+    background-color: #a5a1a1;
+    width: 21.1%;
+    margin-left: -1px;
+}
+
+.btn:last-child{
+    height: 19%;
+}
+
+.btn:last-child > .bt2{
+    border-radius: 0 0 20px 0;
+    height: 100%;
+    background-color: rgb(248, 141, 122);
+    width: 21.1%;
+    margin-left: -1px;
+    font-size: 30px;
+}
+.d{
+    border-radius: 0 0 0 20px;
+}
+
+
+/*------------------------------------------------------------------*/

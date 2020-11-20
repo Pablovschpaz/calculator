@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calc</title>
+</head>
+<body>
+    <div class="main">
+        <div id="op" style="display: none;"></div>
+<!--  ___________________________________________________________  -->
+<!--  _________________________display______________________________  -->
+        <form id="buffer">
+            <div class="copy"></div>
+            <div id="hist">0</div>
+            <div id="display">0</div>
+        </form><!--buffer-->
+<!--  ___________________________________________________________  -->
+<!--  ___________________________________________________________  -->    
+
+    <form class="btns">
+           
+                <div class="btn">
+                    <input class="bt" type="button" value="C" onclick="cleanHist();cleanDisplay()">
+                    <input  class="bt c" type="button" value="÷" onclick="operator(value)">
+                    <input  class="bt c" type="button" value="x" name="*" onclick="operator(name)">
+                    <input  class="bt bt2 c" type="button" value="+" name="bs" onclick="operator(value)">
+                </div><!--btn-->
+                <div class="btn-2">
+                    <input class="bt " type="button" value="7" onclick="numb(value)">
+                    <input class="bt" type="button" value="8" onclick="numb(value)">
+                    <input class="bt" type="button" value="9" onclick="numb(value)">
+                    <input class="bt bt2 c" type="button" value="-" onclick="operator(value)">
+                </div><!--btn-2-->
+                <div class="btn">
+                    <input class="bt " type="button" value="4" onclick="numb(value)">
+                    <input class="bt" type="button" value="5" onclick="numb(value)">
+                    <input class="bt" type="button" value="6" onclick="numb(value)">
+                    <input class="bt bt2" type="button" value="%" onclick="operator(value)">
+                </div><!--btn-->
+                <div class="btn-2">
+                    <input class="bt " type="button" value="1" onclick="numb(value)">
+                    <input class="bt" type="button" value="2" onclick="numb(value)">
+                    <input class="bt" type="button" value="3" onclick="numb(value)">
+                    <input class="bt bt2" type="button" value="x^2" onclick="sqrt(value)">
+                </div><!--btn-2-->
+                <div class="btn">
+                    <input id="e" class="bt d" type="button" value="0" onclick="numb(value)">
+                    <input id="e" class="bt" type="button" value="." onclick="numb(value)">
+                    <input id="e" class="bt" type="button" value="+/-" onclick="abs()">
+                    <input id="e" class="bt bt2" type="button" value="=" onclick="result()">
+                </div><!--btn-->
+            </form><!--btns-->
+        
+
+    </div><!--main-->
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
