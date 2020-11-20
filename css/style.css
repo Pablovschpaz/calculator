@@ -17,7 +17,8 @@ html,body{
     border: 3px solid black;
     border-bottom: 0;
     border-radius: 20px;
-    width: 330px;
+    min-width: 330px;
+    max-width: 350px;
     min-height: 580px;
     margin: 1% auto;
     background-color: #A09595;
@@ -59,10 +60,6 @@ html,body{
 /*botoes-----------------------------------*/
 .c{
     font-size: 25px;
-}
-
-.c:nth-child(2){
-   
 }
 
 .btns{
@@ -127,20 +124,3 @@ html,body{
 
 
 /*------------------------------------------------------------------*/
-
-@media screen and (max-width:350px){
-    .btn{
-        width: 101%;
-        height: 20%;
-    }
-    
-    .btn-2{
-        width: 101%;
-        height: 20%;
-        background-color: #ccc9c6;
-        box-sizing: border-box;
-    }
-
-
-
-}
