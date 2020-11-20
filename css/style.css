@@ -14,7 +14,7 @@ html,body{
 
 .main{
     cursor:pointer;
-    border: 5px solid black;
+    border: 3px solid black;
     border-bottom: 0;
     border-radius: 20px;
     width: 330px;
@@ -100,12 +100,12 @@ html,body{
 
 .btn-2 > .bt2{
     background-color: #A09595;
-    width: 21.1%;
+    width: 21%;
     margin-left: -1px;
 }
 .btn > .bt2{
     background-color: #a5a1a1;
-    width: 21.1%;
+    width: 21%;
     margin-left: -1px;
 }
 
