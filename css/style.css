@@ -14,7 +14,7 @@ html,body{
 
 .main{
     cursor:pointer;
-    border: 3px solid black;
+    border: 9px solid black;
     border-bottom: 0;
     border-radius: 20px;
     min-width: 330px;
@@ -122,6 +122,11 @@ html,body{
     border-radius: 0 0 0 20px;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
 
 /*------------------------------------------------------------------*/
 
