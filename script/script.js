@@ -9,7 +9,7 @@ function numb(x){
 
 function abs(){
     getValue();
-    display.textContent *= -1;
+    display.textContent *= -1 ;
 }
 
 function sqrt(){
