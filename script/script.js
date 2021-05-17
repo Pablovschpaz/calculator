@@ -31,32 +31,50 @@ function result() {
     var valueDisplay = parseFloat(document.querySelector("#display").textContent);
     var op = sessionStorage.getItem("op");
 
+    /*DESIGN PATTERNS*/
 
     if (valueHist == 0) {
         return;
-    } else {
-        if (op == "/") {
-            display.textContent = valueHist / valueDisplay;
+    }
+    const divide = () => {
+        display.textContent = valueHist / valueDisplay;
+         op = "÷";
+    }
+    const multiplies = () => {
+        display.textContent = valueHist * valueDisplay;
+        op = "x"
+    }
+    const subtracts = () => {
+        display.textContent = valueHist - valueDisplay;
+        op = "-"
+    }
+    const sum = () => {
+        display.textContent = valueHist + valueDisplay;
+        op = "+"
+    }
+    const percent = () => {
+        let result = (valueHist / 100) * valueDisplay;
+        if(Number.isInteger(result)){
+            display.textContent = result;
+        }else{
+            display.textContent = (result.toFixed(3))*1;
         }
-        if (op == "*") {
-            display.textContent = valueHist * valueDisplay;
-        }
-        if (op == "-") {
-            display.textContent = valueHist - valueDisplay;
-        }
-        if (op == "+") {
-            display.textContent = valueHist + valueDisplay;
-        }
-        if (op == "%") {
-            display.textContent = (valueHist / 100) * valueDisplay;
-        }
-        hist.innerHTML = `${valueHist}  ${op}  ${valueDisplay}`;
+        
+        op = "% of"
     }
 
+    const calc = [
+        divide,
+        multiplies,
+        subtracts,
+        sum,
+        percent
+    ]
+
+    calc[op]();
     
+    hist.innerHTML = `${valueHist}  ${op}  ${valueDisplay}`;
 }
-
-
 
 
 function getDisplay() {
@@ -68,10 +86,10 @@ function getValue() {
     valueDisplay = parseFloat(document.querySelector("#display").textContent);
 }
 
-function cleanHist() {
-    hist.textContent = 0;
+function cleanHist(x) {
+    hist.textContent = x;
 }
 
-function cleanDisplay() {
-    display.textContent = 0;
+function cleanDisplay(x) {
+    display.textContent = x;
 }
